@@ -195,4 +195,4 @@ def imppn_line(**kwargs):
     return imppn_obj.line
 
 if __name__ == "__main__":
-    print imppn_line(TRF_DITTA="7")
+    print "Quick test\n", imppn_line(TRF_DITTA="7")
