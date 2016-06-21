@@ -56,16 +56,14 @@ IMPPN_CONFIG = {
 
 }
 
-def imppn_line():
+def imppn_line(**kwargs):
     """
-Imppn line
+    Get any list of arguments and transform them in the IMPPN v. 2013 notation
     """
     imppn_config = deepcopy(IMPPN_CONFIG)
     imppn_obj = FixedWidth(imppn_config)
-    imppn_obj.update(last_name="Smith", first_name="Michael",
-        age=32, meal="vegetarian"
-    )
+    imppn_obj.update(**kwargs)
     return imppn_obj.line
 
 if __name__ == "__main__":
-    print imppn_line()
+    print imppn_line(last_name="Smith", first_name="Michael", age=32, meal="vegetarian")
