@@ -1,3 +1,6 @@
+Test script:
+python -m pyIMPPN.tests.pyimppn_test
+
 Easy two-way conversion between Python dictionaries and fixed-width files.
 The FixedWidth class has been used in production without modification for 
 several years.
@@ -6,31 +9,7 @@ This module has also proven useful for "debugging" a fixed-width spec --
 an invalid configuration reports an error that may not be obvious from
 reading the spec document.
 
-Requires a 'config' dictonary. See unit tests for full example.
 
-Small example::
-
-    SAMPLE_CONFIG = {
-
-        'first_name': {
-            'required': True,
-            'type': 'string',
-            'start_pos': 1,
-            'end_pos': 10,
-            'alignment': 'left',
-            'padding': ' '
-        },
-
-        'last_name': {
-            'required': True,
-            'type': 'string',
-            'start_pos': 11,
-            'end_pos': 30,
-            'alignment': 'left',
-            'padding': ' '
-        },
-
-    }
 
 Notes:
 
