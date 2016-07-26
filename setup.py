@@ -5,6 +5,7 @@ setup(
     version='0.0.1',
     description='TeamSystem Multi line generator (fixed width)',
     packages=['pyimppn'],
+    package_dir={'pyimppn': 'pyIMPPN'},
     install_requires=['fixedwidth'],
     license='BSD',
     url='https://github.com/matteopolleschi/pyIMPPN',
