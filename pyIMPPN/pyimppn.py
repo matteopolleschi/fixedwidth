@@ -6,9 +6,9 @@ from fixedwidth.fixedwidth import FixedWidth
 from copy import deepcopy
 
 IMPPN_CONFIG = {
-  "TRF_DITTA": { "padding":" ", "alignment":"right", "length":5, "type":"string", "start_pos":1, "end_pos":5, "required":False},
+  "TRF_DITTA": { "padding":"0", "alignment":"right", "length":5, "type":"string", "start_pos":1, "end_pos":5, "required":False},
   "TRF_VERSIONE": { "padding":" ", "alignment":"right", "length":1, "type":"string", "start_pos":6, "end_pos":6, "required":False},
-  "TRF_TARC": { "padding":" ", "alignment":"right", "length":1, "type":"string", "start_pos":7, "end_pos":7, "required":False},
+  "TRF_TARC": { "padding":"0", "alignment":"right", "length":1, "type":"string", "start_pos":7, "end_pos":7, "required":False},
   "TRF_COD_CLIFOR": { "padding":" ", "alignment":"right", "length":5, "type":"string", "start_pos":8, "end_pos":12, "required":False},
   "TRF_RASO": { "padding":" ", "alignment":"left", "length":32, "type":"string", "start_pos":13, "end_pos":44, "required":False},
   "TRF_IND": { "padding":" ", "alignment":"left", "length":30, "type":"string", "start_pos":45, "end_pos":74, "required":False},
@@ -42,10 +42,10 @@ IMPPN_CONFIG = {
   "TRF_CAU_AGG_2": { "padding":" ", "alignment":"left", "length":34, "type":"string", "start_pos":338, "end_pos":371, "required":False},
   "TRF_DATA_REGISTRAZIONE": { "padding":" ", "alignment":"right", "length":8, "type":"string", "start_pos":372, "end_pos":379, "required":False},
   "TRF_DATA_DOC": { "padding":" ", "alignment":"right", "length":8, "type":"string", "start_pos":380, "end_pos":387, "required":False},
-  "TRF_NUM_DOC_FOR": { "padding":" ", "alignment":"right", "length":8, "type":"string", "start_pos":388, "end_pos":395, "required":False},
-  "TRF_NDOC": { "padding":" ", "alignment":"right", "length":5, "type":"string", "start_pos":396, "end_pos":400, "required":False},
-  "TRF_SERIE": { "padding":" ", "alignment":"right", "length":2, "type":"string", "start_pos":401, "end_pos":402, "required":False},
-  "TRF_EC_PARTITA": { "padding":" ", "alignment":"right", "length":6, "type":"string", "start_pos":403, "end_pos":408, "required":False},
+  "TRF_NUM_DOC_FOR": { "padding":"0", "alignment":"right", "length":8, "type":"string", "start_pos":388, "end_pos":395, "required":False},
+  "TRF_NDOC": { "padding":"0", "alignment":"right", "length":5, "type":"string", "start_pos":396, "end_pos":400, "required":False},
+  "TRF_SERIE": { "padding":"0", "alignment":"right", "length":2, "type":"string", "start_pos":401, "end_pos":402, "required":False},
+  "TRF_EC_PARTITA": { "padding":"0", "alignment":"right", "length":6, "type":"string", "start_pos":403, "end_pos":408, "required":False},
   "TRF_EC_PARTITA_ANNO": { "padding":" ", "alignment":"right", "length":4, "type":"string", "start_pos":409, "end_pos":412, "required":False},
   "TRF_EC_COD_VAL": { "padding":" ", "alignment":"right", "length":3, "type":"string", "start_pos":413, "end_pos":415, "required":False},
   "TRF_EC_CAMBIO": { "padding":" ", "alignment":"right", "length":13, "type":"string", "start_pos":416, "end_pos":428, "required":False},
