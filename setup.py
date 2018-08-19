@@ -1,9 +1,9 @@
 from setuptools import setup
-from path import join, dirname, abspath
+from os.path import join, dirname
 
-basedir = path.abspath(path.dirname(__file__))
-with open(path.join(basedir, 'README'), encoding='utf-8') as f:
-    long_description = f.read()
+f = open(join(dirname(__file__), 'README'))
+long_description = f.read().strip()
+f.close()
 
 setup(
     name='pyIMPPN',
