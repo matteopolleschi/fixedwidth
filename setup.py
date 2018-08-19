@@ -1,7 +1,7 @@
 from setuptools import setup
 from os.path import join, dirname
 
-f = open(join(dirname(__file__), 'README.rst'))
+f = open(join(dirname(__file__), 'README'))
 long_description = f.read().strip()
 f.close()
 
