@@ -1,9 +1,9 @@
 from setuptools import setup
-from os.path import join, dirname
-
-f = open(join(dirname(__file__), 'README.rst'))
-long_description = f.read().strip()
-f.close()
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='pyIMPPN',
@@ -19,6 +19,8 @@ setup(
     zip_safe=False,
     keywords='IMPPN TeamSystem',
     test_suite="pyIMPPN.tests",
+    # other arguments omitted
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/markdown'
 )
+
