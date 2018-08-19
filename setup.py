@@ -1,4 +1,9 @@
 from setuptools import setup
+from path import join, dirname, abspath
+
+basedir = path.abspath(path.dirname(__file__))
+with open(path.join(basedir, 'README'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='pyIMPPN',
@@ -14,4 +19,6 @@ setup(
     zip_safe=False,
     keywords='IMPPN TeamSystem',
     test_suite="pyIMPPN.tests",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
 )
